@@ -1,5 +1,6 @@
 "use client";
 
+import { LayoutConfig } from "@/src/config/layout.config";
 import { siteConfig } from "@/src/config/site.config";
 import {
   Navbar,
@@ -44,7 +45,7 @@ export default function Header() {
   };
 
   return (
-    <Navbar>
+    <Navbar style={{ height: `${LayoutConfig.headerHeight}` }}>
       <NavbarBrand>
         <Link href="/" className="flex gap-1">
           <Logo />
